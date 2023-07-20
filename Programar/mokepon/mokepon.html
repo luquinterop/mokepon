@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MOKEPON!</title>
+    <script src="./js/mokepon.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+ <section id="seleccionar-mascota">
+    
+    <h1 class="titulo">GUERRA DE MICHIS</h1>
+
+        <h2 class="subtitulo">Elige tu mascota:</h2>
+
+    <div class="tarjetas">
+        <label class="tarjeta-de-mokepon" for="Orion">
+            <p>Orion</p>
+            <img src="./assets/15e9b7bd4563bc21af03327c8f72d0dc.jpg" alt="Orion">
+        </label>
+        <input type="radio" name="mascota" id="Orion" /> <br>
+
+        <label class="tarjeta-de-mokepon" for="Tchala">
+            <p>Tchala</p>
+            <img src="./assets/d7c99069d41d7d586bf58b66836cce5d.jpg" alt="Tchala">
+        </label>
+        <input type="radio" name="mascota" id="Tchala" /> <br>
+
+        <label class="tarjeta-de-mokepon" for="Nebula">
+            <p>Nebula</p>
+            <img src="./assets/3e6fd85d3196851895f4d993ac0e2090.jpg" alt="Nebula">
+        </label>
+        <input type="radio" name="mascota" id="Nebula" /> <br>
+    </div>
+        <button id="boton-mascota">Seleccionar</button>
+    </section>
+
+    <section id="seleccionar-ataque">
+        <h1 class="titulo">GUERRA DE MICHIS</h1>
+
+        <h2 class="subtitulo">Elige tu ataque:</h2>
+
+        <div class="tarjetas-ataques">
+            <button id="boton-fuego" class="boton-de-ataque">Fuego🔥</button>
+            <button id="boton-agua" class="boton-de-ataque">Agua💧</button>
+            <button id="boton-tierra" class="boton-de-ataque">Tierra🌱</button>
+        </div>
+
+        <div id="mensajes">
+            <p id="resultado">Mucha suerte</p>
+
+            <section id="reiniciar">
+                <button id="boton-reiniciar">Reiniciar</button>
+            </section>
+        </div> 
+
+        <div class="ataques">
+            <div class="ataques-jugador">
+                <p id="vidas-jugador">3</p>
+                <p id="mascota-jugador"></p>
+                <div id="ataques-del-jugador"></div>
+            </div>
+            <div class="ataques-enemigo">
+                <p id="vidas-enemigo">3</p>
+                <p id="mascota-enemigo"></p>
+                <div id="ataques-del-enemigo"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

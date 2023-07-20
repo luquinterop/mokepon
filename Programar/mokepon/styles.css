@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F2D8D8;
+}
+#seleccionar-mascota {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo {
+    color: white;
+    font-size: 42px;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 30px;
+
+}
+
+.tarjetas, .tarjetas-ataques {
+ display: flex;
+ gap: 10px;
+ 
+}
+
+.tarjeta-de-mokepon {
+    height: 120px;
+    width: 200px;
+    background: #545B77;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.tarjeta-de-mokepon img {
+    width: 90px;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white
+    font-family: 'Poppins', sans-serif;
+    margin: 30px 20px 10px 5px;
+
+
+}
+
+input {
+    display: none;
+
+}
+
+#seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.boton-de-ataque {
+    background-color: #545B77;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 100px;
+    border-color: transparent;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mensajes {
+    width: 280px;
+    background: aliceblue;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+#boton-reiniciar {
+    border: none;
+    color: #545B77;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: white;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.ataques-jugador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@media (max-width: 360px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+
+    }
+ }
